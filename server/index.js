@@ -18,6 +18,8 @@ app.get('/img/hippy-background.jpg', function(req,res) {
 app.get('/audio', function(req,res) {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
+app.use('/img/hippy-background.jpg', express.static(path.join(__dirname, '../img/hippy-background.jpg')))
+
 
 const port = process.env.PORT || 4004
 
