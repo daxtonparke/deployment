@@ -12,11 +12,11 @@ app.get('/css', function (req,res) {
 })
 
 app.get('/img/hippy-background.jpg', function(req,res) {
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../img'))
 })
 
-app.get('/audio', function(req,res) {
-    res.sendFile(path.join(__dirname, '../index.html'))
+app.get('/audio/crabrave.mp3', function(req,res) {
+    res.sendFile(path.join(__dirname, '../audio'))
 })
 app.use('/img/hippy-background.jpg', express.static(path.join(__dirname, '../img/hippy-background.jpg')))
 
