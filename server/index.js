@@ -20,6 +20,8 @@ app.get('/audio', function(req,res) {
 })
 app.use('/img/hippy-background.jpg', express.static(path.join(__dirname, '../img/hippy-background.jpg')))
 
+app.use('/audio/crabrave.mp3', express.static(path.join(__dirname, '../audio/crabrave.mp3')))
+
 
 const port = process.env.PORT || 4004
 
