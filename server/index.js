@@ -7,6 +7,10 @@ app.get('/', function(req,res) {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
+app.get('/css', function (req,res) {
+    res.sendFile(path.join(__dirname, "../styles.css"))
+})
+
 const port = process.env.PORT || 4004
 
 app.listen(port, ()=> console.log(`welcome to port ${port} stay a while`))
