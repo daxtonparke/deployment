@@ -11,7 +11,7 @@ app.get('/css', function (req,res) {
     res.sendFile(path.join(__dirname, "../styles.css"))
 })
 
-app.get('/img', function(req,res) {
+app.get('/img/hippy-background.jpg', function(req,res) {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
 
